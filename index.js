@@ -48,6 +48,7 @@ const btn_t = document.getElementById("ted");
 const btn_pr = document.getElementById("pro");
 const btn_h = document.getElementById("hug");
 const btn_k = document.getElementById("kiss");
+const btn_v = document.getElementById("Dday");
 
 btn_r.disabled = true;
 btn_p.disabled = true;
@@ -56,34 +57,36 @@ btn_t.disabled = true;
 btn_pr.disabled = true;
 btn_h.disabled = true;
 btn_k.disabled = true;
+btn_v.disabled = true;
 
 function checkDaysAndEnableButton() {
   const now = new Date();
   const valentinesDay = new Date(now.getFullYear(), 1, 14);
 
   const diff = valentinesDay - now;
-  const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+  const daysLeft = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-  if (daysLeft <= 7) {
+  if (daysLeft < 7) {
     btn_r.disabled = false;
   }
-  if (daysLeft <= 6) {
+  if (daysLeft < 6) {
     btn_p.disabled = false;
   }
-  if (daysLeft <= 5) {
+  if (daysLeft < 5) {
     btn_c.disabled = false;
   }
-  if (daysLeft <= 4) {
+  if (daysLeft < 4) {
     btn_t.disabled = false;
   }
-  if (daysLeft <= 3) {
+  if (daysLeft < 3) {
     btn_pr.disabled = false;
   }
-  if (daysLeft <= 2) {
+  if (daysLeft < 2) {
     btn_h.disabled = false;
   }
-    if (daysLeft <= 1) {
+  if (daysLeft < 1) {
     btn_k.disabled = false;
+    btn_v,disabled = false;
   }
 }
 checkDaysAndEnableButton();
