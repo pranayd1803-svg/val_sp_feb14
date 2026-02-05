@@ -1,0 +1,104 @@
+
+body {
+  min-height: 100vh;             
+  background: linear-gradient(
+    135deg,
+    #dbacdb,
+    #dd1a85
+  );                                 
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 25px;
+  flex-wrap: wrap;             
+}
+
+    @font-face {
+        font-family: 'RapunledFont';
+        src: url('fonts/RapunledFont.otf') format('truetype');
+    }
+
+.card {
+  background: rgb(255, 231, 166);
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.day {
+  font-size: 35px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #471a1a;
+  color: rgb(228, 172, 245);
+  cursor: pointer;
+  font-family: 'RapunledFont', sans-serif;
+}
+
+.move {
+    position: absolute;
+    font-size: 15px;
+    padding: 10px 15px;
+    border: black;
+    border-radius: 10px;
+    background-color: #120235;
+    color: white;
+    cursor: pointer;
+    left: 45%;
+    transform: translateX(-50%);
+    top: 90%;
+    font-family: 'RapunledFont';
+
+}
+
+.val {
+    position: absolute;
+    font-size: 15px;
+    padding: 10px 15px;
+    border: black;
+    border-radius: 10px;
+    background-color: #120235;
+    color: white;
+    cursor: pointer;
+    left: 55%;
+    transform: translateX(-50%);
+    top: 90%;
+    font-family: 'RapunledFont';
+
+}
+
+#cntlabel{
+    display: block;
+    text-align: center;
+    font-size: 10px;
+}
+
+button:disabled {
+  opacity: 0.05;
+  cursor: not-allowed;
+}
+
+.timer {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4d6d;
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+

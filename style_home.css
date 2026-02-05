@@ -1,0 +1,43 @@
+body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #91bd57;
+      font-family: 'VicFont', sans-serif;
+    }
+
+    @font-face {
+        font-family: 'Vicfont';
+        src: url('fonts/VicFont.ttf') format('truetype');
+    }
+
+    .card {
+      background: rgb(201, 130, 248);
+      padding: 100px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      margin-bottom: 80px;
+    }
+
+    button {
+      padding: 10px 10px;
+      font-size: 15px;
+      font-family: cursive;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      position: absolute;
+      top: 60%;
+      left: 37%;
+      font-family: 'VicFont', sans-serif;
+    }
+
+

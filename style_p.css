@@ -1,0 +1,112 @@
+body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffa6b8;
+      font-family: 'VicFont', cursive;
+    }
+
+    @font-face {
+        font-family: 'VicFont';
+        src: url('fonts/VicFont.ttf') format('truetype');
+    }
+
+    .card {
+      background: rgb(171, 248, 229);
+      padding: 90px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      position: relative;
+      font-family: 'VicFont', cursive;
+    }
+
+    .move {
+    position: absolute;
+    font-size: 15px;
+    padding: 10px 15px;
+    border: black;
+    border-radius: 10px;
+    background-color: #120235;
+    color: white;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80%;
+    }
+
+    #yes {
+      background-color: #4643e7;
+      color: rgb(192, 253, 192);
+      margin-right: 40px;
+      margin-top: 10px;
+    }
+    
+    #hg {
+      background-color: #00d3e2e1;
+      color: rgb(88, 7, 7);
+      margin-right: 20px;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
+    #no {
+      background-color: #c7c7c7;
+    }
+
+    #cntlabel {
+      position: absolute;
+      left: 85%;
+      padding: 10px 10px;
+      border-radius: 10px;
+      background-color: #ecea5c;
+            font-family: 'VicFont';
+
+    }
+
+    #ted {
+      position: absolute;
+      left: 85%;
+      padding: 10px 10px;
+      border-radius: 10px;
+      background-color: #06b93c;
+            font-family: 'VicFont';
+    }
+
+    .img{
+    width: 200px;
+    height: auto;
+}
+
+.rose_i{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    left: 10%;
+}
+.jas_i{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    left: 76%;
+}
+.dess_i{
+    position: absolute;
+    width: 350px;
+    height: auto;
+    left: 5%;
+}
+.kj_i{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    left: 76%;
+}
