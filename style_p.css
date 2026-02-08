@@ -43,6 +43,20 @@ body {
     top: 80%;
     }
 
+     .move_p {
+    position: absolute;
+    font-size: 15px;
+    padding: 10px 15px;
+    border: black;
+    border-radius: 10px;
+    background-color: #120235;
+    color: white;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 84%;
+    }
+
     #yes {
       background-color: #4643e7;
       color: rgb(192, 253, 192);
@@ -109,4 +123,5 @@ body {
     width: 250px;
     height: auto;
     left: 76%;
+
 }
