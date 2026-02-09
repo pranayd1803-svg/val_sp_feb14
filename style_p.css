@@ -1,6 +1,7 @@
 body {
       height: 100vh;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-evenly;
       align-items: center;
       background-color: #ffa6b8;
@@ -123,5 +124,6 @@ body {
     width: 250px;
     height: auto;
 }
+
 
 
