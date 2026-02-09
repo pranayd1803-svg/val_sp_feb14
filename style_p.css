@@ -101,27 +101,26 @@ body {
 }
 
 .rose_i{
-    position: absolute;
+    /*position: absolute;*/
     width: 250px;
     height: auto;
-    left: 10%;
 }
+
 .jas_i{
-    position: absolute;
+    /*position: absolute;*/
     width: 300px;
     height: auto;
-    left: 76%;
 }
+
 .dess_i{
-    position: absolute;
+    /*position: absolute;*/
     width: 350px;
     height: auto;
-    left: 5%;
 }
+
 .kj_i{
-    position: absolute;
+    /*position: absolute;*/
     width: 250px;
     height: auto;
-    left: 76%;
-
 }
+
