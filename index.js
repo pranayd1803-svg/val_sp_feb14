@@ -41,6 +41,17 @@ function tedYes() {
   document.getElementById("ted").innerHTML = count_t;
 }
 
+let count_k = localStorage.getItem("kiss counter")
+  ? Number(localStorage.getItem("kiss counter"))
+  : 0;
+//let count_hg = 0;
+function kissCount() {
+  localStorage.setItem("kiss counter", count_k);
+  count_k += 1;
+  document.getElementById("kiss").innerHTML = count_k;
+}
+
+
 const btn_r = document.getElementById("rose");
 const btn_p = document.getElementById("propose");
 const btn_c = document.getElementById("choco");
@@ -66,33 +77,30 @@ function checkDaysAndEnableButton() {
   const diff = valentinesDay - now;
   const daysLeft = Math.floor(diff / (1000 * 60 * 60 * 24)) + 1;
 
-  if (daysLeft < 8) {
+  if (daysLeft < 7) {
     btn_r.disabled = false;
   }
   if (daysLeft < 7) {
     btn_p.disabled = false;
   }
-  if (daysLeft < 6) {
+  if (daysLeft < 7) {
     btn_c.disabled = false;
   }
-  if (daysLeft < 5) {
+  if (daysLeft < 7) {
     btn_t.disabled = false;
   }
-  if (daysLeft < 4) {
+  if (daysLeft < 7) {
     btn_pr.disabled = false;
   }
-  if (daysLeft < 3) {
+  if (daysLeft < 7) {
     btn_h.disabled = false;
   }
-  if (daysLeft < 2) {
+  if (daysLeft < 7) {
     btn_k.disabled = false;
-  }
-  if (daysLeft < 1) {
     btn_v.disabled = false;
   }
 }
 checkDaysAndEnableButton();
 setInterval(checkDaysAndEnableButton, 1000);
-
 
 

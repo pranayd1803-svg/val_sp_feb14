@@ -1,9 +1,9 @@
 body {
       height: 100vh;
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-evenly;
       align-items: center;
+      flex-wrap: wrap;
       background-color: #ffa6b8;
       font-family: 'VicFont', cursive;
     }
@@ -73,6 +73,22 @@ body {
       margin-top: 10px;
     }
 
+    #ks_r {
+      background-color: #bd1212e1;
+      color: rgb(255, 255, 255);
+      margin-right: 20px;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
+    #ks {
+      background-color: #29fd16e1;
+      color: rgb(0, 0, 0);
+      margin-right: 20px;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
     #no {
       background-color: #c7c7c7;
     }
@@ -96,34 +112,51 @@ body {
             font-family: 'VicFont';
     }
 
+    #kiss {
+      padding: 10px 10px;
+      border-radius: 10px;
+      background-color: #861de7;
+            color: rgb(255, 255, 255);
+            font-family: 'VicFont';
+    }
+
     .img{
     width: 200px;
     height: auto;
 }
 
 .rose_i{
-    /*position: absolute;*/
+    /*position: absolute*/
     width: 250px;
     height: auto;
+    left: 10%;
 }
-
 .jas_i{
-    /*position: absolute;*/
+    /*position: absolute*/
     width: 300px;
     height: auto;
+    left: 76%;
 }
-
 .dess_i{
     /*position: absolute;*/
     width: 350px;
     height: auto;
+    left: 5%;
 }
-
 .kj_i{
     /*position: absolute;*/
     width: 250px;
     height: auto;
+    left: 76%;
+}
+.kiss_i{
+    /*position: absolute;*/
+    width: 250px;
+    height: auto;
+    left: 76%;
 }
 
-
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
