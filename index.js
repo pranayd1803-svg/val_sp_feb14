@@ -98,11 +98,11 @@ function checkDaysAndEnableButton() {
   if (daysLeft < 2) {
     btn_k.disabled = false;
   }
-  if (daysLeft < 1){
+  if (daysLeft < 1) {
     btn_v.disabled = false;
+  }
 }
 checkDaysAndEnableButton();
 setInterval(checkDaysAndEnableButton, 1000);
-
 
 
