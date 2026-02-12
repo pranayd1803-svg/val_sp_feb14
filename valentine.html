@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Be My Valentine?</title>
+  <link rel="stylesheet" href="style_v.css">
+</head>
+
+<body>
+    <div class="card">
+      <h1>For my VALENTINE! 💓</h1>
+      <h3>I hope you liked this mini activity you've been doing this week. If it made you smile from ear to ear or just giggle even a bit, then the task is considered successful.</h3>
+      <h3></h3>
+      <h3>I want you to keep smiling like you are this whole time, as I've mentioned your smile is contagious and it makes me smile too. I want you to keep your optimistic energy going ahead cuz hope is the best thing in this world and you deserve nothing less than that. I know you will achieve what you want to cuz no matter how procrastinative you are, i noticed that you get things done. I hope you become home for ppl that you love and care about. I will be by your side in every decision that you take - not in a i'll keep burden of choice on you kind of way but more like I will back you up no matter what happens. You will get ahead of your fears, it might take time but I know you will. Know that you are loved and you deserve every bit of love you get. A lot of words are just flowing in a stream in my brain but we'll save it for some other day. Happy Valentines day!</h3>
+      <p>I want you to be my witness to the shit I do. Will you continue with that full-time role? I can assure you the work timings won't be hectic at all</p>
+    </div>
+  
+    <div class="hearts"></div>
+  
+    <script>
+        function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerText = "💗";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 3 + 3 + "s";
+  
+        document.querySelector(".hearts").appendChild(heart);
+  
+        setTimeout(() => {
+          heart.remove();
+        }, 6000);
+      }
+  
+      setInterval(createHeart, 555);
+    </script>
+        <button onclick="history.back()" class="move_p">back</button>
+
+  </body>
+</html>
